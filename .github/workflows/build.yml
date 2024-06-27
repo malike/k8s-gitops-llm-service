@@ -1,4 +1,4 @@
-name: Build phase
+name: Build Init phase
 
 on:
   push:
