@@ -19,7 +19,7 @@ It also serves as a helm repository, where you helm releases for both the html f
 Helm must be installed to use the charts.
 
 ```shell
-helm repo add gitops-llm https://malike.github.io/k8s-gitops-llm-service
+helm repo add gitops-llm https://malike.kendeh.com/k8s-gitops-llm-service
 ```
 
 This is a  one time activity.
