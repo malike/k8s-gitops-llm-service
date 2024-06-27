@@ -9,9 +9,8 @@ jobs:
   build:
     name: Build & push image
     runs-on: ubuntu-latest
-    steps:
 
-     
+
   llm-frontend:
     needs: build
     uses: ./.github/workflows/llm-frontend.yml
