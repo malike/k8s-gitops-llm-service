@@ -1,0 +1,24 @@
+name: Build phase
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build & push image
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+  llm-frontend:
+    needs: build
+    uses: ./.github/workflows/llm-frontend.yml
+    secrets: inherit
+
+  llm-service:
+    needs: build
+    uses: ./.github/workflows/llm-service.yml
+    secrets: inherit
