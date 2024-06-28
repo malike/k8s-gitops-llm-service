@@ -38,7 +38,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           path: |
-            trivy-results-frontend.sarif          
-
-      - name: Release New Frontend Helm Chart
-        run: "echo do nothing now"
+            trivy-results-frontend.sarif       

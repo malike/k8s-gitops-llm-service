@@ -2,7 +2,7 @@
 
 FRONTEND_IMAGE_NAME := ghcr.io/malike/k8s-gitops-llm-service/llm-frontend-service
 LLM_IMAGE_NAME := ghcr.io/malike/k8s-gitops-llm-service/llm-service
-TAG := latest
+TAG := v0.0.1
 
 .PHONY:
 build-frontend:  ## Build frontend
@@ -17,10 +17,6 @@ docker-build-frontend-push: docker-build-frontend ## Build and push backend dock
 	docker push ${FRONTEND_IMAGE_NAME}:${TAG}
 
 .PHONY:
-docker-build-frontend-helm-release: ## Release frontend helm release
-	docker push ${FRONTEND_IMAGE_NAME}:${TAG}
-
-.PHONY:
 build-llm:  ## Build llm service
 	echo "doing nothing"
 
@@ -30,10 +26,6 @@ docker-build-llm: ## Build llm docker image
 
 .PHONY:
 docker-build-llm-push: docker-build-llm ## Build and push backend docker image to registry
-	docker push ${LLM_IMAGE_NAME}:${TAG}
-
-.PHONY:
-docker-build-llm-helm-release: ## Release frontend helm release
 	docker push ${LLM_IMAGE_NAME}:${TAG}
 
 .PHONY:
