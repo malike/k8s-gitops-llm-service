@@ -1,0 +1,25 @@
+apiVersion: v1
+entries:
+  llm-frontend:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-06-28T01:45:00.171934099Z"
+    description: A mock Helm chart for Kubernetes LLM Frontend
+    digest: db69f1720660d49a13baa4b9a322750d447648508b2916eccf4f35cf2feb9cf6
+    name: llm-frontend
+    type: application
+    urls:
+    - https://github.com/malike/k8s-gitops-llm-service/releases/download/llm-frontend-0.2.0/llm-frontend-0.2.0.tgz
+    version: 0.2.0
+  llm-service:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-06-28T01:50:49.270721971Z"
+    description: A Helm chart for Kubernetes LLM Service.
+    digest: 7584b3b15d4fd5bd1b8ace551c273a1b9d195db676c038b4038f7d0ce6034f2c
+    name: llm-service
+    type: application
+    urls:
+    - https://github.com/malike/k8s-gitops-llm-service/releases/download/llm-service-0.2.0/llm-service-0.2.0.tgz
+    version: 0.2.0
+generated: "2024-06-28T01:50:49.270731879Z"
