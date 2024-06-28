@@ -40,3 +40,6 @@ jobs:
           git fetch origin gh-pages:gh-pages --force
           git show gh-pages:index.yaml > index.yaml
           git diff
+          git add index.yaml
+          git commit -m "Update index.yaml"
+          git push origin main
