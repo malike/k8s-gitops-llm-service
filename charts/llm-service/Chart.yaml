@@ -1,7 +1,7 @@
 #default helm chart template
 apiVersion: v2
 name: llm-service
-description: A Helm chart for Kubernetes LLM Service.
+description: Sample Helm chart for Kubernetes LLM Service.
 
 type: application
 
