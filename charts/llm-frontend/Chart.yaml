@@ -1,7 +1,7 @@
 #default helm chart template
 apiVersion: v2
 name: llm-frontend
-description: A mock Helm chart for Kubernetes LLM Frontend
+description: A Helm chart for Kubernetes LLM Frontend
 
 type: application
 
