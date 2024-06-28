@@ -2,9 +2,9 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
-  name: bitnami
+  name: selfhosted-malikerepo
   namespace: gitops-service
 spec:
-  url: https://charts.bitnami.com/bitnami
+  url: https://malike.github.io/k8s-gitops-llm-service/
   interval: 10m
 ---
