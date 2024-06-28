@@ -33,7 +33,7 @@ jobs:
           image-ref: ghcr.io/malike/k8s-gitops-llm-service/llm-service
           format: 'sarif'
           severity: 'CRITICAL,HIGH' #Modify to note when to block or unblock, intentionally making pipeline loose
-          output: 'trivy-results.sarif' 
+          output: 'trivy-results-llm.sarif'
 
       - name: Uploads Trivy Scan Reports For LLM Service
         uses: actions/upload-artifact@v2
