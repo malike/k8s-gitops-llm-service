@@ -34,3 +34,11 @@ jobs:
           skip_existing: true
         env:
           CR_TOKEN: "${{ secrets.GITOPS_TOKEN }}"
+
+      - name: Check out and copy index because of github pages page #https://github.com/isaacs/github/issues/547
+      - uses: actions/checkout@v4
+      - name: Fetch file from another branch
+        run: |
+          git fetch origin gh-pages:gh-pages --force
+          git show gh-pages:index.yaml > index.yaml
+          git diff
